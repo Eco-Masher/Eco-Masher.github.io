@@ -217,7 +217,7 @@ nav ul li a:hover{
 }
 
 .info{
-    height: 1000px;
+    height: 950px;
     margin-inline: auto;
     scroll-snap-align: start;
 }
