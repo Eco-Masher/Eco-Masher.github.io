@@ -9,7 +9,9 @@
 
 }
 
+
 .section{
+    /*Makes it so that the sections snap into place when the taskbar stops moving*/
     scroll-snap-align: start;
 }
 
@@ -92,6 +94,7 @@ nav ul li a:hover{
 }
 
 .col-1::after{
+    /*Gradient line for decoration*/
     content: '';
     width: 450px;
     height: 6%;
@@ -112,6 +115,8 @@ nav ul li a:hover{
     margin-left: 15%;
 }
 
+
+/*responsive 1200px width makes the figma image smaller and the home page flex*/
 @media only screen and (max-width:1200px){
 
 
@@ -128,7 +133,7 @@ nav ul li a:hover{
     }
 }
 
-
+/*responsive 700px width makes certain aspects of the website fit in the content*/
 @media only screen and (max-width:700px){
     nav ul{
         width: 100%;
@@ -266,6 +271,7 @@ nav ul li a:hover{
     background: linear-gradient(103deg, rgba(252,246,98,1) 0%, rgba(255,136,0,1) 50%, rgba(247,0,0,1) 100%);
 }
 
+/*backToTop Button with arrow image inside*/
 .backToTop{
     position: fixed;
     bottom: 400px;
@@ -300,46 +306,6 @@ nav ul li a:hover{
 .mainSite{
     scroll-snap-type: y mandatory;
 }
-
-.button {
-    display: inline-block;
-    border-radius: 4px;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 28px;
-    padding: 20px;
-    width: 200px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin-top: 50px;
-  }
-  
-  .button span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-  
-  .button span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-  
-  .button:hover span {
-    padding-right: 25px;
-  }
-  
-  .button:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
-
 .destructionMasher .h2{
     font-size: 80px;
 }

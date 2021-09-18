@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eco Masher</title>
     <link rel="stylesheet" href="style.css">
+    <!--favicon with the logo-->
     <link rel="shortcut icon" type="image/jpg" href="EcoMasherGood1.jpg"/>
 </head>
 
@@ -14,19 +15,24 @@
 
     <div class="mainSite">
 
+        <!--back to top button. When clicked runs the backToTop function in javascript-->
         <div class="backToTop" onclick="backToTop();"></div>
 
+        <!--main page, with navbar and introduction-->
         <section id="home">
             <div class="container">
                 <div class="navbar">
                     <img src="EcoMasherGood1.jpg" class="logo">
                     <nav>
                         <ul id="menulist">
+                            <!--navbar links that redirect to other parts of the page-->
                             <li><a href="#home">Home</a></li>
                             <li><a href="#hub">Hub</a></li>
                             <li><a href="#info">Info</a></li>
                         </ul>
                     </nav>
+
+                    <!--menu button is responsive. When the screen is smaller than 700px width wise, the menu button appears. If clicked, toggleMenu function is called showing the small navbar-->
                     <img src="menu.png" class="menu" onclick="togglemenu()">
                 </div>
 
@@ -37,24 +43,30 @@
                         <h3>If you want to learn about saving the environment, you've come to the right place.</h3>
                     </div>
                     <div class="col-2">
+                        <!--made this graphic image in figma-->
                         <img src="page.png" class="page">
                     </div>
                 </div>
             </div>
         </section>
 
-
+        <!--hub section which contains the button that redirects to the main game-->
         <section>
             <div id="hub" class="hub">
                 <div id="content-1" class="content-1">
+                    <!--link redirect-->
                     <a href="https://editor.p5js.org/Baboom/full/0uTZSSfeg">
-                        <h2><span style="background-color: pink; border-radius: 5px;">Eco Masher</span></h2>
+                        <h2>
+                            <!--span so that the background color doesn't cover the whole length of the page-->
+                            <span style="background-color: pink; border-radius: 5px;">Eco Masher</span>
+                        </h2>
                     </a>
 
                 </div>
             </div>
         </section>
 
+        <!--section for info and quotes from us-->
         <section class="info" id='info'>
             <section class="color1">
                 <div class="half-1">
@@ -83,12 +95,14 @@
     </div>
 
     <script>
+        ///Code that makes the backToTop button appear when the scrollbar is 300px down
         window.addEventListener('scroll', function () {
             var scroll = document.querySelector('.backToTop');
             scroll.classList.toggle("active", window.scrollY > 300)
 
         })
 
+        ///Makes the backToTop button scroll in a smooth manner instead of jumping straight to the page
         function backToTop() {
             window.scrollTo({
                 top: 0,
@@ -96,6 +110,7 @@
             })
         }
 
+        ///This block of code dictates when the menu button is clicked, the minimized navbar shows up at a height of 130px
         var menulist = document.getElementById("menulist")
 
         menulist.style.maxHeight = "0px";
