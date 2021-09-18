@@ -218,6 +218,17 @@ nav ul li a:hover{
         font-size: 20px;
         color: white;
     }
+
+    .hub{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+        scroll-snap-align: start;
+        grid-template-areas: 
+        "content-1" 
+        "content-2";
+    }
+    
     
 }
 
@@ -235,29 +246,31 @@ nav ul li a:hover{
 .hub{
     display: grid;
     height: 1000px;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     text-align: center;
     scroll-snap-align: start;
 }
 
 #content-1{
-    background: #7038ff;
-    padding-top: 350px;
-}
-
-#content-1:hover{
-    background: #9f81eb;
-    padding-top: 350px;
+    background: rgb(252,246,98);
+    background: linear-gradient(103deg, rgba(252,246,98,1) 0%, rgba(255,136,0,1) 50%, rgba(247,0,0,1) 100%);
+    position: relative;
 }
 
 #content-2{
-    background: #ef008f;
-    padding-top: 350px;
+    margin-top: 20%;
+    background-color: #fff;
 }
 
-#content-2:hover{
-    background: #e783bf;
-    padding-top: 350px;
+.hub h2{
+    font-size: 80px;
+    color: #fff;
+    margin-top: 20%;
+}
+
+.hub h3{
+    font-size: 40px;
+    color: #fff;
 }
 
 ::-webkit-scrollbar{
@@ -365,4 +378,26 @@ nav ul li a:hover{
 
 .hub a:visited, a:link, a:active{
     text-decoration: none;
+}
+
+.hub a{
+    display: grid;
+    height: 80px;
+    width: 250px;
+    background: #f026ef;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    place-items: center;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.hub a:hover{
+    background: #0a971d;
 }
