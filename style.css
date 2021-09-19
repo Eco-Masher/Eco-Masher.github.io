@@ -337,6 +337,10 @@ nav ul li a:hover{
     background: #0a971d;
 }
 
+.info a:hover{
+    background: #0a971d;
+}
+
 .info{
     display: grid;
     height: 1000px;
