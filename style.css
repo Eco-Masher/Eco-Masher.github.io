@@ -119,7 +119,6 @@ nav ul li a:hover{
 /*responsive 1200px width makes the figma image smaller and the home page flex*/
 @media only screen and (max-width:1200px){
 
-
     .row{
         flex-direction: column;
         margin-top: 100px;
@@ -131,6 +130,7 @@ nav ul li a:hover{
         margin-left: 0;
         margin-top: 40px;
     }
+
 }
 
 /*responsive 700px width makes certain aspects of the website fit in the content*/
@@ -228,7 +228,6 @@ nav ul li a:hover{
         "content-1" 
         "content-2";
     }
-    
     
 }
 
@@ -462,7 +461,7 @@ nav ul li a:hover{
     display: grid;
     height: 1000px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
     grid-template-areas: 
     "content-5 content-6"
     "content-7" "content-8";
@@ -477,8 +476,9 @@ nav ul li a:hover{
 }
 
 #content-5 h2{
-    font-size: 45px;
+    font-size: 43px;
     margin-top: 10%;
+    padding-left: 10px;
 }
 
 #content-6{
@@ -487,13 +487,25 @@ nav ul li a:hover{
 }
 
 #content-6 img{
-    margin-top: 50px;
+    padding: 30px;
 }
 
 #content-7{
-    
+    background: rgb(240,38,239);
+    background: linear-gradient(103deg, rgba(240,38,239,1) 0%, rgba(241,145,34,1) 44%, rgba(247,61,61,1) 100%);
+}
+
+#content-7 img{
+    padding: 30px;
 }
 
 #content-8{
-    
+    background: rgb(247,61,61);
+    background: linear-gradient(73deg, rgba(247,61,61,1) 0%, rgba(241,145,34,1) 44%, rgba(240,38,239,1) 100%);
+}
+
+#content-8 h2{
+    font-size: 43px;
+    margin-top: 10%;
+    padding-right: 10px;
 }
