@@ -116,120 +116,6 @@ nav ul li a:hover{
 }
 
 
-/*responsive 1200px width makes the figma image smaller and the home page flex*/
-@media only screen and (max-width:1200px){
-
-    .row{
-        flex-direction: column;
-        margin-top: 100px;
-        margin-right: 75px;
-    }
-
-    .col-2 .page{
-        width: 125%;
-        margin-left: 0;
-        margin-top: 40px;
-    }
-
-}
-
-/*responsive 700px width makes certain aspects of the website fit in the content*/
-@media only screen and (max-width:700px){
-    nav ul{
-        width: 100%;
-        background: linear-gradient(135deg, rgba(240,224,34,1) 0%, rgba(196,91,26,1) 52%, rgba(209,58,58,1) 100%);
-        position: absolute;
-        top: 75px;
-        right: 0;
-        z-index: 10;
-    }
-
-    nav ul li{
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    nav ul li a{
-        color: #fff;
-        font-size: 1rem;
-        margin-left: 1px;
-    }
-
-    .menu{
-        display: block;
-    }
-
-    #menulist{
-        overflow: hidden;
-        transition: 1.5s;
-    }
-
-    .row{
-        flex-direction: column;
-        margin-top: 100px;
-        margin-right: 75px;
-    }
-
-    .col-2 .page{
-        width: 125%;
-        margin-left: 0;
-        margin-top: 40px;
-        height: 200%;
-    }
-
-    .page:hover{
-        width: 125%;
-        margin-left: 0;
-        margin-top: 40px;
-        height: 200%;
-        cursor: pointer;
-    }
-
-    .col-1::after{
-        content: '';
-        width: 5px;
-        height: 57%;
-        background: linear-gradient(135deg, rgba(240,224,34,1) 0%, rgba(196,91,26,1) 52%, rgba(209,58,58,1) 100%);
-        position: absolute;
-        left: -20px;
-        top: 8px;
-    }
-
-    .backToTop{
-        position: fixed;
-        bottom: 10px;
-        right: 10px;
-        height: 20px;
-        width: 20px;
-        background:#6ec3f4 url(up-arrow.png);
-        border-radius: 6px;
-        background-size: 20px;
-        background-position: center;
-        background-repeat: no-repeat;
-        cursor: pointer;
-        z-index: 100000;
-        visibility: hidden;
-        opacity: 0;
-        transition: 0.5s;
-    }
-
-    .info h2{
-        font-size: 20px;
-        color: white;
-    }
-
-    .hub{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        text-align: center;
-        scroll-snap-align: start;
-        grid-template-areas: 
-        "content-1" 
-        "content-2";
-    }
-    
-}
 
 .info{
     height: 950px;
@@ -364,12 +250,6 @@ nav ul li a:hover{
     opacity: 1;
 }
 
-.about{
-    height: 1000px;
-    background: rgb(57,57,57);
-    background: linear-gradient(0deg, rgba(57,57,57,1) 0%, rgba(184,184,184,1) 36%, rgba(255,255,255,1) 100%);
-    scroll-snap-align: start;
-}
 
 .mainSite{
     scroll-snap-type: y mandatory;
@@ -508,4 +388,165 @@ nav ul li a:hover{
     font-size: 43px;
     margin-top: 10%;
     padding-right: 10px;
+}
+
+/*responsive 1200px width makes the figma image smaller and the home page flex*/
+@media only screen and (max-width:1200px){
+
+    .row{
+        flex-direction: column;
+        margin-top: 100px;
+        margin-right: 75px;
+    }
+
+    .col-2 .page{
+        width: 125%;
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+}
+
+/*responsive 700px width makes certain aspects of the website fit in the content*/
+@media only screen and (max-width:700px){
+    nav ul{
+        width: 100%;
+        background: linear-gradient(135deg, rgba(240,224,34,1) 0%, rgba(196,91,26,1) 52%, rgba(209,58,58,1) 100%);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 10;
+    }
+
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a{
+        color: #fff;
+        font-size: 1rem;
+        margin-left: 1px;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    #menulist{
+        overflow: hidden;
+        transition: 1.5s;
+    }
+
+    .row{
+        flex-direction: column;
+        margin-top: 100px;
+        margin-right: 75px;
+    }
+
+    .col-2 .page{
+        width: 125%;
+        margin-left: 0;
+        margin-top: 40px;
+        height: 200%;
+    }
+
+    .page:hover{
+        width: 125%;
+        margin-left: 0;
+        margin-top: 40px;
+        height: 200%;
+        cursor: pointer;
+    }
+
+    .col-1::after{
+        content: '';
+        width: 5px;
+        height: 57%;
+        background: linear-gradient(135deg, rgba(240,224,34,1) 0%, rgba(196,91,26,1) 52%, rgba(209,58,58,1) 100%);
+        position: absolute;
+        left: -20px;
+        top: 8px;
+    }
+
+    .backToTop{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        height: 20px;
+        width: 20px;
+        background:#6ec3f4 url(up-arrow.png);
+        border-radius: 6px;
+        background-size: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 100000;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .info h2{
+        font-size: 20px;
+        color: white;
+    }
+
+    .hub{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: center;
+        scroll-snap-align: start;
+        grid-template-areas: 
+        "content-1" 
+        "content-2";
+    }
+
+    #content-5 h2{
+        font-size: 20px;
+    }
+
+    #content-8 h2{
+        font-size: 20px;
+    }
+
+    .info{
+        display: grid;
+        height: 500px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-areas: 
+        "content-5 content-6"
+        "content-7" "content-8";
+        text-align: center;
+        scroll-snap-align: start;
+    }
+
+    .EcoQuiz{
+        display: grid;
+        height: 1000px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:  
+        "content-3" 
+        "content-4";
+        text-align: center;
+        scroll-snap-align: start;
+    }
+
+    
+
+    .hub{
+        display: grid;
+        height: 1000px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:  
+        "content-6" 
+        "content-5";
+        text-align: center;
+        scroll-snap-align: start;
+    }
+    
 }
